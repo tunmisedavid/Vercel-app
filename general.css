@@ -1,0 +1,11 @@
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Manrope:wght@200;400;500;600;800&family=Martian+Mono:wght@100;200;400;500;600;700;800&family=Public+Sans:wght@200;400;500;600;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
+*{
+    font-family: 'manrope',sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(33, 43, 54);
+}
+.container{
+    width: 100%;
+    /* padding-left: 7rem; */
+}

@@ -1,0 +1,291 @@
+.second-nav{
+    z-index: 2;
+    position: fixed;
+    left: 7rem;
+    top: 0;
+    bottom: 0;
+    width: 19rem;
+    row-gap: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(234, 234, 234, 0.1);
+    box-shadow: 0 0 2px rgb(215, 212, 212);
+}
+.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18rem;
+}
+.chats{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.dashed-btn{
+    background-color: white;
+    border: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashed-btn:hover{
+    width: 2rem;
+    height: 2rem;
+    /* border: 1rem; */
+    background-color: rgb(181, 181, 181);
+    transition: background-color 1.5s;
+}
+.dashed-border{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1.7px gray dashed;
+    border-radius: 1rem;
+}
+.search-bar{
+    background-color: white;
+    height: 3.8rem;
+    width: 19rem;
+    padding-left: 0.8rem;
+    border: 0.1px rgb(204, 201, 201) solid;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+.search-icon{
+    width: 1.5rem;
+    margin-right: 0.4rem;
+}
+.search-input{
+    font-size: 17px;
+    border: none;
+}
+.search-input::placeholder{
+    font-size: 15px;
+}
+.search-input:active{
+    border: none;
+}
+.search-bar:hover{
+    border: 1px black solid;
+}
+.search-bar:active{
+    border: 2px blue solid;
+}
+.archive-container{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.archive{
+    color: rgb(92, 92, 249);
+    font-weight: 600;
+}
+.archive:hover{
+    background-color: rgba(71, 123, 184, 0.2);
+    padding: 0.3rem;
+    border-radius: 8px;
+}
+.rule-2{
+    border-width: 0.1px;
+    width: 19rem;
+    border-color: rgba(235, 233, 233, 0.3);
+}
+.fourth-row{
+    display:flex;
+    flex-direction: column;
+    width: 19rem;
+    height: 21.6rem;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;  
+}
+.pinned-msg{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+}
+.pinned{
+    font-weight: 600;
+    color: gray;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 4px rgb(228, 227, 227);
+}
+.profile-pic-container{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+}
+.profile-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.3rem;
+}
+.green{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgb(19, 206, 19);
+    border-radius: 0.4rem;
+    position: absolute;
+    bottom: -4px;
+    left: 25px;
+}
+.profile-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile-details{
+    flex: 1;
+}
+.profile-name{
+    font-weight: 600;
+    font-size: 15px;
+}
+.profile-msgs{
+    font-size: 14px;
+}
+.time{
+    font-size: 15px;
+    font-weight: 600;
+}
+.unread{
+    background-color: rgb(54, 54, 230);
+    color: white;
+    font-size: 15px;
+    border: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 0.7rem;
+}
+.juvenal{
+    display: none;
+}
+@media (max-width:768px) {
+    .second-nav{
+        row-gap: 1.2rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 17rem;
+    }
+    .first-row{
+        width: 15rem;
+    }
+    .chats{
+        font-size: 1rem;
+    }
+    .dashed-btn{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 1rem;
+    }
+    .dashed-btn:hover{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .dashed-border{
+        width: 1rem;
+        height: 1rem;
+    }
+    .search-bar{
+        height: 3.4rem;
+        width: 16rem;
+        padding-left: 0.5rem;
+        border-radius: 6px;
+    }
+    .search-icon{
+        width: 1.2rem;
+        margin-right: 0.3rem;
+    }
+    .search-input{
+        font-size: 14px;
+    }
+    .search-input::placeholder{
+        font-size: 13px;
+    }
+    .archive-container{
+        font-size: 14px;
+        column-gap: 1rem;
+    }
+    .archive:hover{
+        padding: 0.2rem;
+        border-radius: 6px;
+    }
+    .rule-2{
+        width: 16rem;
+    }
+    .fourth-row{
+        width: 16rem;
+    }
+    .pinned-msg{
+        row-gap: 1rem;
+    }
+    .pinned{
+        font-size: 15px;
+    }
+    .profile-container{
+        column-gap: 0.6rem;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .profile-pic-container{
+        width: 2rem;
+        height: 2rem;
+    }
+    .green{
+        width: 0.6rem;
+        height: 0.6rem;
+        bottom: -3px;
+        left: 21px;
+    }
+    .profile-name{
+        font-size: 14px;
+    }
+    .profile-msgs{
+        font-size: 13px;
+    }
+    .time{
+        font-size: 14px;
+    }
+    .unread{
+        font-size: 14px;
+    }
+}
+@media (max-width:425px) {
+    .second-nav{
+        left: 6rem;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+        padding: 0;
+    }
+    .fourth-row{
+        width: 20rem;
+    }
+    .profile-container{
+        width: 90%;
+    }
+    .archive-container{
+        width: 16rem;
+        justify-content: space-between;
+    }
+    chats{
+        font-size: 1rem;
+    }
+    .pinned{
+        margin-left: 1rem;
+    }
+}

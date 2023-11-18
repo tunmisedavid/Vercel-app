@@ -1,0 +1,132 @@
+.section{
+    position: fixed;
+    left: 30rem;
+    right: 0;
+    top: 5rem;
+    bottom: 7rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    background-color: rgba(194, 194, 194, 0.2);
+}
+.main{
+    width: 45rem;
+    display: flex;
+    justify-content: space-between;
+}
+.main-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+.main-2{
+    margin-top: 2rem;
+}
+
+.main-3{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+}
+.msgs-container{
+    display: flex;
+    column-gap: 1rem;
+}
+.msg-content{
+    background-color: white;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.another{
+    border-radius: 1rem;
+}
+.abstract{
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.react{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.cat{
+    width: 14rem;
+}
+.pexel-2{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+.pexels{
+    color: rgb(1, 98, 196);
+}
+.pexels:hover{
+    text-decoration: underline;
+}
+.blue{
+    background-color: rgb(16, 83, 192); 
+    color: white;
+}
+@media (max-width:768px) {
+    .section{
+        left: 26rem;
+        bottom: 5rem;
+        top: 3.5rem;
+        padding-top: 1rem;
+        font-size: 14px;
+    }
+    .main{
+        width: 22rem;
+    }
+    .main-1{
+        row-gap: 3rem;
+    }
+    .main-2{
+        margin-top: 1rem;
+        display: none;
+    }
+    .main-3{
+        margin-top: 3rem;
+        row-gap: 6rem;
+    }
+    .msgs-container{
+        column-gap: 0.5rem;
+    }
+    .msg-content{
+        padding: 0.3rem 0.6rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+    .another{
+        border-radius: 0.8rem;
+    }
+    .abstract{
+        width: 8rem;
+    }
+    .react{
+        column-gap: 1rem;
+    }
+    .cat{
+        width: 8rem;
+    }
+    .pexel-2{
+        padding: 1rem;
+        row-gap: 1rem;
+    }
+}
+@media (max-width:425px) {
+    .section{
+        display: none;
+    }
+}
